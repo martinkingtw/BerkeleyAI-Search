@@ -33,4 +33,4 @@ Q6: Design heuristics
 
 Q7: Another abstract state representation and heuristics  
 
-Q8: Suboptimal Search  
+Q8: Local Search

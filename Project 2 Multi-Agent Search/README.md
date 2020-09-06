@@ -28,3 +28,5 @@ Q3: Alpha-Beta Pruning
 Q4: Expectimax
 
 Q5: A better evaluation function
+
+Q6: Tic Tac Toe
