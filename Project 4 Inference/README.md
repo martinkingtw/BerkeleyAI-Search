@@ -4,10 +4,17 @@ Website: http://ai.berkeley.edu/tracking.html
 
 The project is my personal implementation of both exact and approximate inference using Bayes' Nets.
 
-If you like to see the implementation, then autograder.py provides an easy way to see the stats of each implementation.  
+If you would like to have a quick overview of the implementation, then autograder.py provides an easy way to see the stats of each implementation.  
 
 ```
 py autograder.py
+```
+
+If you would like to have a graphic representation of the implementation, then you can run the following command for each individual question.
+
+```
+# Example: Q2
+py autograder.py -q q2
 ```
 
 Alternatively, if you would like to play the ghost buster game, then run  

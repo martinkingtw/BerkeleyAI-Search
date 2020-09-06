@@ -4,13 +4,13 @@ Website: http://ai.berkeley.edu/reinforcement.html
 
 The project is my personal implementation of value iteration and Q-learning in different scenarios.
 
-If you like to see the implementation, then autograder.py provides an easy way to see the stats of each implementation.  
+If you would like to have a quick overview of the implementation, then autograder.py provides an easy way to see the stats of each implementation.  
 
 ```
 py autograder.py
 ```
 
-Alternatively, if you would like to play GridWorld game, then run  
+Alternatively, if you like to play GridWorld game, then run  
 
 ```
 py gridworld.py

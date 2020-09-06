@@ -4,7 +4,7 @@ Website: http://ai.berkeley.edu/search.html
 
 The project is my personal implementation of different search methods, including A* search and designing efficient heuristics.  
 
-If you like to see the implementation, then autograder.py provides an easy way to see the stats of each implementation.  
+If you would like to have a quick overview of the implementation, then autograder.py provides an easy way to see the stats of each implementation.  
 
 ```
 py autograder.py

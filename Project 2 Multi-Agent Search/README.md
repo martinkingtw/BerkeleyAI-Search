@@ -4,10 +4,17 @@ Website: http://ai.berkeley.edu/multiagent.html
 
 The project is my personal implementation of agents with different evaluation functions, including Minimax and Alpha-Beta Pruning.
 
-If you like to see the implementation, then autograder.py provides an easy way to see the stats of each implementation.  
+If you would like to have a quick overview of the implementation, then autograder.py provides an easy way to see the stats of each implementation.  
 
 ```
 py autograder.py
+```
+
+If you would like to have a graphic representation of the implementation, then you can run the following command for each individual question.
+
+```
+# Example: Q1
+py autograder.py -q q1
 ```
 
 Alternatively, if you would like to play pacman, then run  
