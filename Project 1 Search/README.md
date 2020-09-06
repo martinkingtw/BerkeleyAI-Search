@@ -1,4 +1,4 @@
-# Preject 1 Search
+# Project 1 Search
 
 The project is my personal implementation of different search methods, including A* search and designing efficient heuristics.  
 
@@ -32,4 +32,3 @@ Q6: Design heuristics
 Q7: Another abstract state representation and heuristics  
 
 Q8: Suboptimal Search  
-  
