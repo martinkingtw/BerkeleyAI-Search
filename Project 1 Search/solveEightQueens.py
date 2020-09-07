@@ -106,26 +106,22 @@ class Board:
         """
         #util.raiseNotDefined()
         squareArray = self.squareArray
-        minNumOfAttack = float("inf")
-        for i in range(8):
-            for j in range(8):
-                temp = 8
-                for k in range(8):
-                    if squareArray[k][j] == 1:
-                        temp = k
-                        squareArray[k][j] = 0
-                        break
-                squareArray[i][j] = 1
-                numberOfAttack = Board(squareArray).getNumberOfAttacks()
-                if minNumOfAttack > numberOfAttack:
-                    minNumOfAttack = numberOfAttack
-                    copyBoard = [row[:] for row in squareArray]
-                    betterBoard = Board(copyBoard)
-                    newRow = i
-                    newCol = j
-                squareArray[i][j] = 0
-                squareArray[temp][j] = 1
-        return (betterBoard, minNumOfAttack, newRow, newCol)
+        formerNumberOfAttacks = self.getNumberOfAttacks()
+        if formerNumberOfAttacks == 0:
+            return (self, formerNumberOfAttacks, -1, -1)
+        costBoard = self.getCostBoard()
+        minNumberOfAttacks = min([costBoard.squareArray[r][c] for r in range(0, 8) for c in range(0, 8)])
+        candidates = [(r, c) for r in range(0, 8) for c in range(0, 8) if costBoard.squareArray[r][c] == minNumberOfAttacks]
+        if minNumberOfAttacks <= formerNumberOfAttacks:
+            newRow, newCol = random.choice(candidates)
+            copyBoard = [row[:] for row in squareArray]
+            betterBoard = Board(copyBoard)
+            oldRow = [r for r in range(0, 8) if squareArray[r][newCol] == 1][0]
+            betterBoard.squareArray[oldRow][newCol] = 0
+            betterBoard.squareArray[newRow][newCol] = 1
+            return (betterBoard, minNumberOfAttacks, newRow, newCol)
+        else:
+            return (self, formerNumberOfAttacks, -1, -1)
 
     def getNumberOfAttacks(self):
         """
